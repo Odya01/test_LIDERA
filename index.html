@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header__container">
+        <div class="header__left-nav">
+          <a href="/" class="header__logo">
+            <span class="header__img">
+              <svg
+                width="27"
+                height="27"
+                viewBox="0 0 27 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.2086 26.9998C20.4947 26.9948 26.3997 20.9527 26.3997 13.4999C26.3997 6.04709 20.4947 0.00484875 13.2086 0C18.3711 2.20637 21.9988 7.41982 21.9988 13.4999C21.9988 19.5798 18.3711 24.7933 13.2086 26.9998Z"
+                  fill="#121127"
+                  fill-opacity="0.32"
+                />
+                <path
+                  d="M0 4.80044C0 2.14947 2.07363 0.00043869 4.63158 0.00043869H7.70016C14.9902 0.00043869 20.9 6.04453 20.9 13.5003C20.9 20.9561 14.9902 27.0002 7.70016 27.0002H4.63158C2.07363 27.0002 0 24.8511 0 22.2002V4.80044Z"
+                  fill="#121127"
+                />
+              </svg>
+            </span>
+            <span class="header__text">Dlex</span>
+          </a>
+
+          <nav class="nav__item">
+            <a href="#" class="nav__list">Product</a>
+            <a href="#" class="nav__list">Features</a>
+            <a href="#" class="nav__list">Marketplace</a>
+            <a href="#" class="nav__list">Company</a>
+          </nav>
+        </div>
+
+        <div class="header__buttons">
+          <button class="header__btn header__btn1" data-popup="open">
+            Sign in
+          </button>
+          <button class="header__btn header__btn2" data-popup="open">
+            Sign Up
+          </button>
+        </div>
+
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+        <label for="burger-checkbox" class="burger"></label>
+
+        <nav class="nav__burger">
+          <a href="#" class="nav__list">Product</a>
+          <a href="#" class="nav__list">Features</a>
+          <a href="#" class="nav__list">Marketplace</a>
+          <a href="#" class="nav__list">Company</a>
+
+          <div class="header__buttons">
+            <button class="header__btn header__btn1" data-popup="open">
+              Sign in
+            </button>
+            <button class="header__btn header__btn2" data-popup="open">
+              Sign Up
+            </button>
+          </div>
+        </nav>
+        <!-- -->
+      </div>
+    </header>
+
+    <main>
+      <div class="popup" id="popup">
+        <div class="popup__content">
+          <button class="popup__close">&times;</button>
+
+          <div class="popup__col popup__left">
+            <div class="popup__logo header__logo">
+              <span class="header__img">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2086 26.9998C20.4947 26.9948 26.3997 20.9527 26.3997 13.4999C26.3997 6.04709 20.4947 0.00484875 13.2086 0C18.3711 2.20637 21.9988 7.41982 21.9988 13.4999C21.9988 19.5798 18.3711 24.7933 13.2086 26.9998Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                  <path
+                    d="M0 4.80044C0 2.14947 2.07363 0.00043869 4.63158 0.00043869H7.70016C14.9902 0.00043869 20.9 6.04453 20.9 13.5003C20.9 20.9561 14.9902 27.0002 7.70016 27.0002H4.63158C2.07363 27.0002 0 24.8511 0 22.2002V4.80044Z"
+                    fill="#121127"
+                  />
+                </svg>
+              </span>
+              <span class="header__text">Dlex</span>
+            </div>
+
+            <h2 class="popup__title">Join the club</h2>
+
+            <p class="popup__desc">
+              Subscribe and Get an Extra<br />
+              25% Off on your first purchase.
+            </p>
+
+            <form class="popup__form">
+              <input
+                type="email"
+                class="popup__input"
+                placeholder="Email address"
+              />
+              <button class="popup__btn">Subscribe</button>
+            </form>
+
+            <p class="popup__note">
+              By signing up, you agree to Privacy Policy and Terms of Use.
+            </p>
+          </div>
+
+          <div class="popup__col popup__right">
+            <img
+              src="images/popup_image.png"
+              alt="Subscribe and Get an Extra 25% Off on your first purchase."
+              class="popup__img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__header">
+            <h1 class="hero__title">
+              Have no fear of perfection, you'll never reach it.
+            </h1>
+            <p class="hero__descr">
+              Create interactive user flow diagrams that tell a story.
+            </p>
+          </div>
+
+          <div class="hero__content">
+            <div class="hero__voucher">
+              <div class="voucher__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 8H4C3.44772 8 3 8.44772 3 9V11C3 11.5523 3.44772 12 4 12H20C20.5523 12 21 11.5523 21 11V9C21 8.44772 20.5523 8 20 8Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 8V21"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19 12V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V12"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 8.00001C6.83696 8.00001 6.20107 7.73662 5.73223 7.26778C5.26339 6.79894 5 6.16305 5 5.50001C5 4.83697 5.26339 4.20108 5.73223 3.73224C6.20107 3.2634 6.83696 3.00001 7.5 3.00001C8.46469 2.9832 9.41003 3.45127 10.2127 4.34317C11.0154 5.23507 11.6383 6.50941 12 8.00001C12.3617 6.50941 12.9846 5.23507 13.7873 4.34317C14.59 3.45127 15.5353 2.9832 16.5 3.00001C17.163 3.00001 17.7989 3.2634 18.2678 3.73224C18.7366 4.20108 19 4.83697 19 5.50001C19 6.16305 18.7366 6.79894 18.2678 7.26778C17.7989 7.73662 17.163 8.00001 16.5 8.00001"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="voucher__text">
+                <h3 class="voucher__title">Voucher</h3>
+                <span class="voucher__descr">+$10, 000</span>
+              </div>
+            </div>
+
+            <div class="hero__video-wrapper">
+              <video
+                src="images/IMG_7526.MOV"
+                muted
+                class="hero__video"
+              ></video>
+              <button class="video-btn"></button>
+            </div>
+
+            <div class="hero__sent">
+              <div class="sent__header">
+                <div class="voucher__icon sent__icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 5H4C2.89543 5 2 5.89543 2 7V17C2 18.1046 2.89543 19 4 19H20C21.1046 19 22 18.1046 22 17V7C22 5.89543 21.1046 5 20 5Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 10H22"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="sent__text">
+                  <h3 class="voucher__title sent__title">Successfully sent</h3>
+                  <p class="voucher__descr sent__descr">200+ send total</p>
+                </div>
+              </div>
+
+              <div class="sent__avatars">
+                <img
+                  src="images/people_sent1.png"
+                  alt="user"
+                  class="sent__avatar"
+                />
+                <img
+                  src="images/people_sent2.png"
+                  alt="user"
+                  class="sent__avatar"
+                />
+                <img
+                  src="images/people_sent3.png"
+                  alt="user"
+                  class="sent__avatar"
+                />
+
+                <button class="sent__add">+</button>
+              </div>
+            </div>
+
+            <div class="hero__arrow">
+              <svg
+                width="150"
+                height="151"
+                viewBox="0 0 150 151"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M124.451 26.2617L133.092 32.2943C135.78 34.1704 135.194 38.305 132.091 39.3608L122.309 42.6898C119.102 43.7811 116.076 40.6412 117.284 37.4765L118.311 34.7848C118.545 34.1734 118.624 33.5141 118.544 32.8647L118.192 30.0351C117.765 26.5978 121.611 24.279 124.451 26.2617Z"
+                  fill="#FFBB24"
+                />
+                <path
+                  opacity="0.2"
+                  d="M115.787 33.5403C56.4055 28.5599 13.095 71.4274 48.7379 100.59C61.3804 110.934 77.0879 109.784 86.6656 100.207C97.3926 89.4796 98.925 71.8566 88.198 61.1296C64.4453 37.3769 6.59596 62.2789 48.3548 149.244"
+                  stroke="#F15060"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="5.2 5.2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="container why__container">
+          <span class="why__label">WHY DLEX</span>
+
+          <h2 class="why__title">
+            Creativity is nothing but the<br />
+            way to solve new problems.
+          </h2>
+
+          <div class="why__slider">
+            <div class="why__track">
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why1.svg" alt="UI Design" />
+                </div>
+                <h3 class="why__item-title">UI Design</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why2.svg" alt="UX & Research" />
+                </div>
+                <h3 class="why__item-title">UX & Research</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why3.svg" alt="Fast delivery" />
+                </div>
+                <h3 class="why__item-title">Fast delivery</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why4.svg" alt="Customer support" />
+                </div>
+                <h3 class="why__item-title">Customer support</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why2.svg" alt="UX & Research" />
+                </div>
+                <h3 class="why__item-title">UX & Research</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why3.svg" alt="Fast delivery" />
+                </div>
+                <h3 class="why__item-title">Fast delivery</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="images/why4.svg" alt="Customer support" />
+                </div>
+                <h3 class="why__item-title">Customer support</h3>
+                <p class="why__item-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="why__controls">
+              <button class="why__prev">
+                <svg
+                  width="13"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.750009 4.08325L11.4167 4.08325"
+                    stroke="#9D097C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4.08329 7.41667C4.08329 7.41667 0.749987 4.9617 0.749979 4.08331C0.749972 3.20491 4.08331 0.75 4.08331 0.75"
+                    stroke="#9D097C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <div class="why__dots">
+                <span class="why__dot why__dot--active"></span>
+                <span class="why__dot"></span>
+                <span class="why__dot"></span>
+                <span class="why__dot"></span>
+              </div>
+
+              <button class="why__next">
+                <svg
+                  width="13"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.4167 4.08325L0.75 4.08325"
+                    stroke="#9D097C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.0834 7.41667C8.0834 7.41667 11.4167 4.9617 11.4167 4.08331C11.4167 3.20491 8.08337 0.75 8.08337 0.75"
+                    stroke="#9D097C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="optimize">
+        <div class="container optimize__container">
+          <span class="optimize__label">OPTIMIZE YOUR PAYMENTS</span>
+
+          <h2 class="optimize__title">Grow your revenue</h2>
+
+          <div class="optimize__row">
+            <div class="optimize__col">
+              <h3 class="optimize__subtitle">Improve analytics</h3>
+              <p class="optimize__text">
+                By leveraging predictive modeling and cross-source data
+                synchronization or anomaly detection algorithms, empowering
+                teams to make data-driven decisions.
+              </p>
+
+              <div class="optimize__image">
+                <img
+                  src="images/optimize-analytics.png"
+                  alt="Analytics dashboard"
+                  class="optimize__img"
+                />
+              </div>
+
+              <ul class="optimize__list list-reset">
+                <li class="optimize__item">
+                  Upgrade your customer experience instantly
+                </li>
+                <li class="optimize__item">Retain more, happier customers</li>
+                <li class="optimize__item">
+                  Start with done-for-you account setup
+                </li>
+              </ul>
+            </div>
+
+            <div class="optimize__col">
+              <h3 class="optimize__subtitle">Maximize acceptance</h3>
+              <p class="optimize__text">
+                By using deception or false suggestions or suppression of truth
+                or other unethical means, which are believed and relied upon by.
+              </p>
+
+              <div class="optimize__image">
+                <img
+                  src="images/optimize-acceptance.png"
+                  alt="Create property interface"
+                  class="optimize__img"
+                />
+                <img
+                  src="images/optimize-acceptance2.png"
+                  alt="Create property interface"
+                  class="optimize__img optimize__image_small"
+                />
+              </div>
+
+              <ul class="optimize__list list-reset">
+                <li class="optimize__item">
+                  Upgrade your customer experience instantly
+                </li>
+                <li class="optimize__item">Retain more, happier customers</li>
+                <li class="optimize__item">
+                  Start with done-for-you account setup
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="container pricing__container">
+          <div class="pricing__content">
+            <div class="pricing__text">
+              <h2 class="pricing__title">
+                Everything you need for
+                <span class="pricing__title-accent">$99 a month</span>
+              </h2>
+
+              <p class="pricing__subtitle">
+                Includes every feature we offer plus unlimited projects and
+                unlimited users
+              </p>
+            </div>
+
+            <button class="pricing__btn" data-popup="open">
+              Get Started Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta__container">
+          <h2 class="cta__title">
+            Boost your productivity.<br />
+            Start using workflow today.
+          </h2>
+
+          <p class="cta__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint velit officia consequat duis enim velit mollit.
+          </p>
+
+          <button class="cta__btn" data-popup="open">Sign up for free</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <span class="footer__img">
+              <svg
+                width="27"
+                height="27"
+                viewBox="0 0 27 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.2086 26.9998C20.4947 26.9948 26.3997 20.9527 26.3997 13.4999C26.3997 6.04709 20.4947 0.00484875 13.2086 0C18.3711 2.20637 21.9988 7.41982 21.9988 13.4999C21.9988 19.5798 18.3711 24.7933 13.2086 26.9998Z"
+                  fill="#121127"
+                  fill-opacity="0.32"
+                />
+                <path
+                  d="M0 4.80044C0 2.14947 2.07363 0.00043869 4.63158 0.00043869H7.70016C14.9902 0.00043869 20.9 6.04453 20.9 13.5003C20.9 20.9561 14.9902 27.0002 7.70016 27.0002H4.63158C2.07363 27.0002 0 24.8511 0 22.2002V4.80044Z"
+                  fill="#121127"
+                />
+              </svg>
+            </span>
+            <span class="footer__text">Dlex</span>
+          </a>
+
+          <p class="footer__descr">
+            Making the world a better place through<br />
+            constructing elegant hierarchies
+          </p>
+
+          <div class="footer__socials">
+            <a href="#" class="footer__social footer__social--facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1639)">
+                  <path
+                    d="M24 12.0006C23.9996 9.70738 23.3422 7.46232 22.1056 5.53116C20.8689 3.6 19.1048 2.06362 17.0221 1.1039C14.9394 0.144184 12.6254 -0.198683 10.3538 0.115894C8.08235 0.43047 5.94854 1.38932 4.20505 2.87892C2.46156 4.36852 1.18139 6.3265 0.516104 8.52105C-0.149185 10.7156 -0.171736 13.0548 0.451122 15.2618C1.07398 17.4688 2.31616 19.4511 4.03061 20.974C5.74506 22.4969 7.85999 23.4967 10.125 23.8551V15.4693H7.0785V12.0006H10.125V9.35681C10.125 6.34931 11.9167 4.68806 14.6572 4.68806C15.5573 4.70054 16.4551 4.77875 17.3438 4.92206V7.87556H15.8302C15.5723 7.84131 15.31 7.86553 15.0628 7.94643C14.8155 8.02734 14.5896 8.16285 14.4018 8.34293C14.214 8.52301 14.0691 8.74303 13.978 8.9867C13.8868 9.23037 13.8516 9.49144 13.875 9.75056V12.0006H17.2035L16.671 15.4693H13.875V23.8551C16.6978 23.4085 19.2686 21.9691 21.1248 19.796C22.9809 17.6228 24.0005 14.8585 24 12.0006Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1639">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__social footer__social--twitter">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1640)">
+                  <path
+                    d="M24 4.575C23.1 4.95 22.2 5.25 21.15 5.325C22.2 4.725 22.95 3.75 23.325 2.625C22.35 3.225 21.3 3.6 20.175 3.825C19.275 2.85 18 2.25 16.65 2.25C13.95 2.25 11.7 4.425 11.7 7.2C11.7 7.575 11.775 7.95 11.85 8.325C7.72502 8.1 4.12502 6.15 1.65002 3.15C1.20002 3.9 0.975018 4.725 0.975018 5.625C0.975018 7.35 1.87502 8.85 3.15002 9.75C2.32502 9.75 1.57502 9.525 0.900018 9.15V9.225C0.900018 11.625 2.62502 13.575 4.87502 14.025C4.42502 14.1 4.05002 14.175 3.60002 14.175C3.30002 14.175 3.00002 14.175 2.70002 14.1C3.30002 16.05 5.17502 17.475 7.27502 17.55C5.62502 18.9 3.45002 19.65 1.12502 19.65C0.750018 19.65 0.300018 19.65 -0.0749817 19.575C2.17502 20.925 4.80002 21.75 7.57502 21.75C16.65 21.75 21.6 14.25 21.6 7.725C21.6 7.5 21.6 7.275 21.6 7.125C22.5 6.375 23.325 5.55 24 4.575Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1640">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__social footer__social--instagram">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1641)">
+                  <path
+                    d="M12 2.775C15 2.775 15.36 2.78625 16.5458 2.84025C17.2593 2.84867 17.9662 2.97984 18.6353 3.228C19.1237 3.40832 19.5656 3.69588 19.9283 4.0695C20.3019 4.43218 20.5894 4.87402 20.7698 5.3625C21.0179 6.0316 21.1491 6.73841 21.1575 7.452C21.2115 8.64 21.225 9 21.225 12C21.225 15 21.2138 15.36 21.1598 16.5458C21.1513 17.2593 21.0202 17.9662 20.772 18.6353C20.5847 19.1202 20.2981 19.5606 19.9305 19.9282C19.5629 20.2958 19.1225 20.5825 18.6375 20.7698C17.9684 21.0179 17.2616 21.1491 16.548 21.1575C15.3623 21.2115 15.006 21.2228 12.0023 21.2228C8.9985 21.2228 8.64225 21.2115 7.4565 21.1575C6.74291 21.1491 6.0361 21.0179 5.367 20.7698C4.87852 20.5894 4.43668 20.3019 4.074 19.9282C3.70038 19.5656 3.41282 19.1237 3.2325 18.6353C2.98434 17.9662 2.85317 17.2593 2.84475 16.5458C2.7885 15.36 2.775 15.0037 2.775 12C2.775 8.99625 2.78625 8.64 2.84025 7.45425C2.84867 6.74066 2.97984 6.03385 3.228 5.36475C3.40898 4.87606 3.69731 4.4342 4.07175 4.07175C4.43443 3.69813 4.87627 3.41057 5.36475 3.23025C6.03385 2.98209 6.74066 2.85092 7.45425 2.8425C8.64 2.7885 9 2.775 12 2.775ZM12 0.75C8.9445 0.75 8.56125 0.76275 7.362 0.8175C6.42842 0.83728 5.5049 1.01478 4.6305 1.3425C3.88032 1.62483 3.20059 2.06707 2.6385 2.6385C2.06626 3.20037 1.62324 3.88012 1.34025 4.6305C1.01253 5.5049 0.83503 6.42842 0.81525 7.362C0.76275 8.56125 0.75 8.9445 0.75 12C0.75 15.0555 0.76275 15.4388 0.8175 16.638C0.83728 17.5716 1.01478 18.4951 1.3425 19.3695C1.62549 20.1199 2.06851 20.7996 2.64075 21.3615C3.20262 21.9337 3.88237 22.3768 4.63275 22.6597C5.50715 22.9875 6.43067 23.165 7.36425 23.1847C8.56425 23.2395 8.94675 23.2523 12.0023 23.2523C15.0578 23.2523 15.441 23.2395 16.6403 23.1847C17.5738 23.165 18.4974 22.9875 19.3718 22.6597C20.1188 22.3702 20.7972 21.928 21.3638 21.3615C21.9303 20.795 22.3724 20.1165 22.662 19.3695C22.9897 18.4951 23.1672 17.5716 23.187 16.638C23.2418 15.438 23.2545 15.0555 23.2545 12C23.2545 8.9445 23.2418 8.56125 23.187 7.362C23.1672 6.42842 22.9897 5.5049 22.662 4.6305C22.379 3.88012 21.936 3.20037 21.3638 2.6385C20.8019 2.06626 20.1221 1.62324 19.3718 1.34025C18.4974 1.01253 17.5738 0.83503 16.6403 0.81525C15.4388 0.76275 15.0555 0.75 12 0.75Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                  <path
+                    d="M12 6.2251C10.8578 6.2251 9.74125 6.5638 8.79156 7.19836C7.84187 7.83293 7.10167 8.73486 6.66457 9.7901C6.22748 10.8453 6.11311 12.0065 6.33594 13.1267C6.55877 14.247 7.10879 15.276 7.91644 16.0836C8.72408 16.8913 9.75309 17.4413 10.8733 17.6641C11.9936 17.887 13.1547 17.7726 14.21 17.3355C15.2652 16.8984 16.1671 16.1582 16.8017 15.2085C17.4363 14.2588 17.775 13.1423 17.775 12.0001C17.775 10.4685 17.1665 8.99958 16.0835 7.91656C15.0005 6.83353 13.5316 6.2251 12 6.2251ZM12 15.7501C11.2583 15.7501 10.5333 15.5302 9.91659 15.1181C9.29991 14.7061 8.81926 14.1204 8.53543 13.4352C8.2516 12.7499 8.17734 11.9959 8.32203 11.2685C8.46673 10.5411 8.82388 9.87289 9.34833 9.34845C9.87277 8.824 10.541 8.46685 11.2684 8.32215C11.9958 8.17746 12.7498 8.25172 13.435 8.53555C14.1203 8.81938 14.7059 9.30002 15.118 9.91671C15.53 10.5334 15.75 11.2584 15.75 12.0001C15.75 12.9947 15.3549 13.9485 14.6516 14.6517C13.9484 15.355 12.9945 15.7501 12 15.7501Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                  <path
+                    d="M18.0052 7.34478C18.7508 7.34478 19.3552 6.74036 19.3552 5.99478C19.3552 5.24919 18.7508 4.64478 18.0052 4.64478C17.2597 4.64478 16.6552 5.24919 16.6552 5.99478C16.6552 6.74036 17.2597 7.34478 18.0052 7.34478Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1641">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__social footer__social--github">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1642)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0.300049C5.4 0.300049 0 5.70005 0 12.3C0 17.625 3.45 22.1251 8.175 23.7001C8.775 23.7751 9 23.475 9 23.1C9 22.8001 9 22.0501 9 21.0751C5.625 21.8251 4.95 19.5001 4.95 19.5001C4.425 18.1501 3.6 17.7751 3.6 17.7751C2.475 17.0251 3.675 17.0251 3.675 17.0251C4.875 17.1001 5.55 18.225 5.55 18.225C6.6 20.0251 8.325 19.5001 9.075 19.2001C9.15 18.4501 9.525 17.9251 9.825 17.625C7.125 17.3251 4.35 16.2751 4.35 11.7001C4.35 10.425 4.8 9.30005 5.55 8.47505C5.4 8.17505 5.025 6.97505 5.7 5.32505C5.7 5.32505 6.675 5.02505 9 6.52505C9.975 6.22505 10.95 6.15005 12 6.15005C13.05 6.15005 14.025 6.30005 15 6.52505C17.325 4.95005 18.3 5.25005 18.3 5.25005C18.975 6.90005 18.525 8.10005 18.45 8.40005C19.2 9.22505 19.65 10.2751 19.65 11.625C19.65 16.2001 16.875 17.25 14.175 17.5501C14.625 17.9251 15 18.6751 15 19.8001C15 21.375 15 22.725 15 23.1C15 23.4001 15.225 23.7751 15.825 23.7001C20.55 22.1251 24 17.625 24 12.3C24 5.70005 18.6 0.300049 12 0.300049Z"
+                    fill="#121127"
+                    fill-opacity="0.32"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1642">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4 class="footer__title">Solutions</h4>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Marketing</a></li>
+              <li><a class="footer__link" href="#">Analytics</a></li>
+              <li><a class="footer__link" href="#">Commerce</a></li>
+              <li><a class="footer__link" href="#">Insights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Support</h4>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Pricing</a></li>
+              <li><a class="footer__link" href="#">Documentation</a></li>
+              <li><a class="footer__link" href="#">Guides</a></li>
+              <li><a class="footer__link" href="#">API Status</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Company</h4>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">About</a></li>
+              <li><a class="footer__link" href="#">Blog</a></li>
+              <li><a class="footer__link" href="#">Jobs</a></li>
+              <li><a class="footer__link" href="#">Press</a></li>
+              <li><a class="footer__link" href="#">Partners</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Legal</h4>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Claim</a></li>
+              <li><a class="footer__link" href="#">Privacy</a></li>
+              <li><a class="footer__link" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2025 Dlex, Inc. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
