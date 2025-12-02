@@ -65,11 +65,15 @@
   }
 
   .popup__left {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 600px) {
+  .popup__form {
+    gap: 18px;
+  }
+
   .popup__content {
     display: flex;
     flex-direction: column-reverse;
