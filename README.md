@@ -1,4 +1,4 @@
-# test_LIDERA
+# Тестовое LIDERA agency
 
 ⚠️ ТЗ
 - Сверстайте этот макет без использования глобальных js/css фреймворков и библиотек (например, react, vue, bootstrap, tailwind)
