@@ -5,7 +5,7 @@
   }
 
   .hero__header::after {
-    top: 170px;
+    top: -35px;
   }
 }
 
